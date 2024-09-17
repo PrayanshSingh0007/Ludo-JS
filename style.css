@@ -2,6 +2,15 @@
     box-sizing: border-box;
 }
 
+.winner{
+    font-size: 24px;
+    font-weight: bold;
+    color: #009d60;
+    text-align: center;
+    height: 100vmin;
+    display: none;
+}
+
 .ludo-container {
     width: 450px;
     margin: 20px auto;

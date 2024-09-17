@@ -178,8 +178,10 @@ export class Ludo {
                 clearInterval(interval);
 
                 // check if player won
+                document.querySelector('.winner').innerHTML = '';
                 if(this.hasPlayerWon(player)) {
-                    alert(`Player: ${player} has won!`);
+                    winner.innerHTML = (`Player: ${player} has won!`);
+                    winner.style.display = 'block';
                     this.resetGame();
                     return;
                 }
