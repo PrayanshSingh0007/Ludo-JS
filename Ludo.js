@@ -1,5 +1,6 @@
 import { BASE_POSITIONS, HOME_ENTRANCE, HOME_POSITIONS, PLAYERS, SAFE_POSITIONS, START_POSITIONS, STATE, TURNING_POINTS } from './constants.js';
 import { UI } from './UI.js';
+const winner = document.querySelector('.winner');
 
 export class Ludo {
     currentPositions = {
@@ -178,7 +179,6 @@ export class Ludo {
                 clearInterval(interval);
 
                 // check if player won
-                const winner = document.querySelector('.winner');
                 if(this.hasPlayerWon(player)) {
                     winner.innerHTML = (`Player: ${player} has won!`);
                     winner.style.display = 'block';
