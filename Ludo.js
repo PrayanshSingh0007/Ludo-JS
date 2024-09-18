@@ -178,7 +178,7 @@ export class Ludo {
                 clearInterval(interval);
 
                 // check if player won
-                document.querySelector('.winner').innerHTML = '';
+                const winner = document.querySelector('.winner');
                 if(this.hasPlayerWon(player)) {
                     winner.innerHTML = (`Player: ${player} has won!`);
                     winner.style.display = 'block';
