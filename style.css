@@ -1,5 +1,11 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    background-color: burlywood;
 }
 
 .winner{
@@ -99,6 +105,8 @@
 }
 
 .btn {
+    border-radius: 4rem;
+    width: 30vmin;
     padding: 8px 20px;
     border: none;
     cursor: pointer;
@@ -113,6 +121,12 @@
     background-color: #009d60;
     color: white;
 }
+
+.btn-reset {
+    background-color: #0b71e6;
+    color: white;
+}
+
 
 .row {
     display: flex;
